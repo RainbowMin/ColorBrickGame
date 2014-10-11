@@ -35,6 +35,7 @@ public class Grid : MonoBehaviour
 	public Bounds _Bounds;
 	public Vector4 _Border;
 
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -53,13 +54,13 @@ public class Grid : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if(Input.GetMouseButton(0))
-		{
-			_MousePos = Input.mousePosition;
-			Vector3 MousPos_V3 =  Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			_Bounds = _SpriteRenderer.sprite.bounds;
-			_Border = _SpriteRenderer.sprite.border;
-			_V2 = new Vector2(MousPos_V3.x, MousPos_V3.y);
+//		if(Input.GetMouseButton(0))
+//		{
+//			_MousePos = Input.mousePosition;
+//			Vector3 MousPos_V3 =  Camera.main.ScreenToWorldPoint(Input.mousePosition);
+//			_Bounds = _SpriteRenderer.sprite.bounds;
+//			_Border = _SpriteRenderer.sprite.border;
+//			_V2 = new Vector2(MousPos_V3.x, MousPos_V3.y);
 
 //			if(_SpriteRenderer.sprite.bounds
 //			{
@@ -67,8 +68,6 @@ public class Grid : MonoBehaviour
 //				MyOnClick();
 //			}
 
-
-		}
 //	    int leftMouseBtn = 0;
 //		if(Input.GetMouseButtonDown(leftMouseBtn))
 //		{
@@ -117,31 +116,30 @@ public class Grid : MonoBehaviour
 		_gameManager.SendMessage("OnGridPressed", info);
 	}
 
-//	//当鼠标在GUIElement(GUI元素)或Collider(碰撞体)上点击时调用OnMouseDown。
-//	void OnMouseDown()
-//	{	
-//
-//
-//		if(IsLocked)
-//		{
-//			return;
-//		}
-//
-//		IndexInfo info =  _gameLogic.GetGridIndex(this.gameObject);
-//		//Debug.Log("index x="+info.x+" y="+info.y);
-//		//Debug.Log("-----------------------------------");
-//		//Debug.Log ("OnMouseDown time=" + Time.time);
-//		_gameManager.SendMessage("OnGridPressed", info);
-//
-//
-////		_SpriteRenderer.sortingLayerName = "Sprite_Drop";
-////		rigidbody2D.AddForce(new Vector2(0,15));
-////		rigidbody2D.gravityScale = 1.0f;//启用重力
-////		rigidbody2D.isKinematic = false;
-////		//把碰撞体隐藏掉以防色块之间相互碰撞
-////		BoxCollider2D boxCollider = gameObject.GetComponent<BoxCollider2D>();
-////		boxCollider.size = new Vector2 (0, 0);
-//	}
+	//当鼠标在GUIElement(GUI元素)或Collider(碰撞体)上点击时调用OnMouseDown。
+	void OnMouseDown()
+	{	
+
+		if(IsLocked)
+		{
+			return;
+		}
+
+		IndexInfo info =  _gameLogic.GetGridIndex(this.gameObject);
+		//Debug.Log("index x="+info.x+" y="+info.y);
+		//Debug.Log("-----------------------------------");
+		//Debug.Log ("OnMouseDown time=" + Time.time);
+		_gameManager.SendMessage("OnGridPressed", info);
+
+
+//		_SpriteRenderer.sortingLayerName = "Sprite_Drop";
+//		rigidbody2D.AddForce(new Vector2(0,15));
+//		rigidbody2D.gravityScale = 1.0f;//启用重力
+//		rigidbody2D.isKinematic = false;
+//		//把碰撞体隐藏掉以防色块之间相互碰撞
+//		BoxCollider2D boxCollider = gameObject.GetComponent<BoxCollider2D>();
+//		boxCollider.size = new Vector2 (0, 0);
+	}
 	
 	public IEnumerator DropToBottom(IndexInfo index)
 	{
