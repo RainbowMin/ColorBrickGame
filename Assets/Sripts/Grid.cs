@@ -39,6 +39,8 @@ public class Grid : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
+
+
 		_gameManager = GameObject.FindGameObjectWithTag("GameController");
 		_gameLogic = _gameManager.GetComponent<GameLogic>();
 		IsLocked = false;

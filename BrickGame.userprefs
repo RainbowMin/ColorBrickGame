@@ -1,36 +1,36 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Sripts/StartButton.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Sripts/Background.cs">
     <Files>
-      <File FileName="Assets/Sripts/Grid.cs" Line="155" Column="15" />
-      <File FileName="Assets/Sripts/GameLogic.cs" Line="1" Column="1" />
+      <File FileName="Assets/Sripts/BottomPoint.cs" Line="10" Column="13" />
+      <File FileName="Assets/Sripts/GameLogic.cs" Line="77" Column="3" />
+      <File FileName="Assets/Sripts/Grid.cs" Line="42" Column="3" />
       <File FileName="Assets/iTweenEditor/Editor/iTweenEventDataEditor.cs" Line="1" Column="1" />
       <File FileName="Assets/iTweenEditor/iTweenEvent.cs" Line="1" Column="1" />
       <File FileName="Assets/iTweenEditor/Editor/iTweenPathEditor.cs" Line="1" Column="1" />
       <File FileName="Assets/iTweenEditor/iTweenPath.cs" Line="1" Column="1" />
-      <File FileName="Assets/Sripts/StartButton.cs" Line="34" Column="1" />
-      <File FileName="Assets/Sripts/AudioManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Sripts/StartButton.cs" Line="1" Column="1" />
+      <File FileName="Assets/Sripts/AudioManager.cs" Line="25" Column="20" />
       <File FileName="../CandyCrush/Assets/Candy/Scripts/Candy.cs" Line="1" Column="1" />
       <File FileName="../CandyCrush/Assets/Candy/Scripts/GameController.cs" Line="1" Column="1" />
       <File FileName="Assets/NGUI/Scripts/Editor/UIAtlasMaker.cs" Line="1" Column="1" />
-      <File FileName="Assets/Sripts/Background.cs" Line="17" Column="50" />
       <File FileName="Assets/Sripts/ScreenSetting.cs" Line="1" Column="1" />
-      <File FileName="Assets/Sripts/ScreenHelper.cs" Line="12" Column="40" />
+      <File FileName="Assets/Sripts/ExitButton.cs" Line="1" Column="1" />
+      <File FileName="Assets/NGUI/Scripts/Tweening/UITweener.cs" Line="1" Column="1" />
+      <File FileName="Assets/NGUI/Scripts/Internal/EventDelegate.cs" Line="1" Column="1" />
+      <File FileName="Assets/Sripts/Grid_NGUI.cs" Line="108" Column="29" />
+      <File FileName="Assets/Sripts/GameLogic_NGUI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Sripts/NGUIScreenHelper.cs" Line="1" Column="1" />
+      <File FileName="Assets/Sripts/Background_NGUI.cs" Line="32" Column="28" />
+      <File FileName="Assets/Sripts/Background.cs" Line="55" Column="16" />
+      <File FileName="Assets/Sripts/GlobalScale.cs" Line="11" Column="8" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
-            <Node name="iTweenEditor" expanded="True" />
             <Node name="Sripts" expanded="True">
-              <Node name="StartButton.cs" selected="True" />
-            </Node>
-          </Node>
-          <Node name="Assembly-CSharp-Editor" expanded="True">
-            <Node name="NGUI" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Editor" expanded="True" />
-              </Node>
+              <Node name="Background.cs" selected="True" />
             </Node>
           </Node>
         </State>

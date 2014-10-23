@@ -34,8 +34,6 @@ public class GameLogic : MonoBehaviour
 	//public Transform BottomPreparePoint;
 	//public Transform TopGameOverPoint;
 	public Transform BottomDestinationPoint;
-//	public int BottomX = -10;
-//	public int BottomY = -10;
 	public List<GameObject> GridPrefabList; 
 
 	public float fCleanGridInterval = 0.3f;
@@ -78,8 +76,8 @@ public class GameLogic : MonoBehaviour
 	{
 
 		SpriteRenderer spriteRenderer = (SpriteRenderer)GridPrefabList[0].GetComponent<SpriteRenderer>();
-		GridHeight = spriteRenderer.sprite.rect.height / 100;
-		GridWidth = spriteRenderer.sprite.rect.width / 100;
+		GridHeight = spriteRenderer.sprite.rect.height / 100 * spriteRenderer.gameObject.transform.localScale.y;
+		GridWidth = spriteRenderer.sprite.rect.width / 100 * spriteRenderer.gameObject.transform.localScale.x;
 
 		for(int i = 0; i < Width; i++)
 		{
