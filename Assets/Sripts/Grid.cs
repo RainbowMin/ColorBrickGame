@@ -41,6 +41,7 @@ public class Grid : MonoBehaviour
 	{
 
 
+
 		_gameManager = GameObject.FindGameObjectWithTag("GameController");
 		_gameLogic = _gameManager.GetComponent<GameLogic>();
 		IsLocked = false;
